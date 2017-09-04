@@ -1,0 +1,12 @@
+# CafeApp/ .travis.yml
+language: csharp
+
+matrix:
+  include:
+    - dotnet: 2.0
+      mono: none
+      dist: trusty
+    - mono: latest
+
+script:
+  - ./build.sh RunUnitTests
