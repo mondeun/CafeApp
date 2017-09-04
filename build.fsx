@@ -4,7 +4,7 @@ open Fake
 let testDir = "./tests"
 let nunitRunnerPath = "packages/NUnit.Runners/tools/"
 let buildDir = "./build"
-Target "Clean" (fun _ -> CleanDir buildDir)
+Target "Clean" (fun _ -> CleanDirs[buildDir; testDir])
 Target "BuildApp" (fun _ -> 
           !! "src/**/*.fsproj"
             -- "src/**/*.Tests.fsproj"

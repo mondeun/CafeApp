@@ -1,7 +1,7 @@
 #!/bin/bash
 if test "$OS" = "Windows_NT"
 then # Windows
-  .paket/paket.exe
+  .paket/paket.exe install
   exit_code=$?
   if [ $exit_code -ne 0 ]; then
     exit $exit_code
