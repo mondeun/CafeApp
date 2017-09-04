@@ -7,5 +7,5 @@ open NUnit.Framework
 module UnitTests =
     [<Test>]
     let ``Sample Test`` () =
-        let say = new Say()
-        Assert.AreEqual("Test", say.hello)
+        let say = "Test"
+        Assert.AreEqual("Test", say)
