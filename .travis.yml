@@ -3,7 +3,7 @@ language: csharp
 
 matrix:
   include:
-    - dotnet: 2.0
+    - dotnet: 2.0.0
       mono: none
       dist: trusty
     - mono: latest

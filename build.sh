@@ -6,7 +6,7 @@ then # Windows
   if [ $exit_code -ne 0 ]; then
     exit $exit_code
   fi
-  dotnet restore
+  .paket/paket.exe restore
   exit_code=$?
   if [ $exit_code -ne 0 ]; then
     exit $exit_code
@@ -18,7 +18,7 @@ else # Non Windows
   if [ $exit_code -ne 0 ]; then
     exit $exit_code
   fi
-  mono dotnet restore
+  mono .paket/paket.exe restore
   exit_code=$?
   if [ $exit_code -ne 0 ]; then
     exit $exit_code
