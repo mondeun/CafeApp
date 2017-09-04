@@ -1,5 +1,6 @@
 # CafeApp/ .travis.yml
 language: csharp
+sudo: required
 
 matrix:
   include:
