@@ -1,5 +1,11 @@
 namespace CafeApp.Core.Tests
 
-module Say =
-    let hello name =
-        printfn "Hello %s" name
+
+open CafeApp.Core
+open NUnit.Framework
+
+module UnitTests =
+    [<Test>]
+    let ``Sample Test`` () =
+        let say = new Say()
+        Assert.AreEqual("Test", say.hello)
